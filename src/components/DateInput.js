@@ -1,6 +1,6 @@
-export default function TextInput({
+export default function DateInput({
   labelDescription = 'Digite o nome: ',
-  inputValue = 'Digite o nome:',
+  inputValue = '',
   onInputChange = null,
 }) {
   function handleInputChange({ currentTarget }) {
@@ -18,7 +18,7 @@ export default function TextInput({
         autoFocus
         className="p-1 border "
         id="inputName"
-        type="text"
+        type="date"
         value={inputValue}
         onChange={handleInputChange}
       />
