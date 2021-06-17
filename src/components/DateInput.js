@@ -2,6 +2,8 @@ export default function DateInput({
   labelDescription = 'Digite o nome: ',
   inputValue = '',
   onInputChange = null,
+  id = 'id_input_date',
+  autoFocus = false,
 }) {
   function handleInputChange({ currentTarget }) {
     if (onInputChange) {
@@ -11,13 +13,13 @@ export default function DateInput({
   }
   return (
     <div className="flex flex-col my-4">
-      <label className="mb-1" htmlFor="inputName">
+      <label className="mb-1" htmlFor={id}>
         {labelDescription}
       </label>
       <input
-        autoFocus
+        autoFocus={autoFocus}
         className="p-1 border "
-        id="inputName"
+        id={id}
         type="date"
         value={inputValue}
         onChange={handleInputChange}
