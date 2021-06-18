@@ -21,7 +21,5 @@ export default function getAgeFrom(birthDate) {
   ) {
     return age - 1;
   }
-
-  console.log(`${todayYear}, ${todayMonth}, ${todayDay}`);
   return age;
 }

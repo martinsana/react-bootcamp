@@ -1,5 +1,5 @@
 export default function DateInput({
-  labelDescription = 'Digite o nome: ',
+  labelDescription = '',
   inputValue = '',
   onInputChange = null,
   id = 'id_input_date',
